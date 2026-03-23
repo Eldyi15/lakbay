@@ -1,0 +1,12 @@
+#map {
+  height: 100%;   /* or a fixed px value */
+  width: 100%;
+  background-color: transparent !important;
+}
+
+.landing-page-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}

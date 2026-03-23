@@ -1,1 +1,90 @@
-/* You can add global styles to this file, and also import other style files */
+
+// Include theming for Angular Material with `mat.theme()`.
+// This Sass mixin will define CSS variables that are used for styling Angular Material
+// components according to the Material 3 design spec.
+// Learn more about theming and how to use it for your application's
+// custom components at https://material.angular.dev/guide/theming
+@use '@angular/material' as mat;
+
+html {
+  height: 100vh;
+  @include mat.theme((
+    color: (
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+    ),
+    typography: Roboto,
+    density: 0,
+  ));
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background:rgba(242, 247, 255, 1);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1f2939;
+}
+
+/* 1. The Main Container */
+.leaflet-tooltip.custom-region-tooltip {
+    background-color: #ffffff;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    overflow: hidden; /* Clips the image corners to the border-radius */
+}
+
+/* 2. The Text Content */
+.tooltip-header {
+    padding: 10px 10px 0;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    letter-spacing: -1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 3. The Image Container */
+.img-container {
+    width: 360px;      /* Fixed width */
+    height: 240px;     /* Fixed height prevents "jumping" when image loads */
+    background: #f8f9fa; 
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crops the image to fill the 200x120 area perfectly */
+    display: block;
+    border-radius: 6px;
+}
+
+/* 4. The Tooltip "Arrow" (the triangle) */
+.leaflet-tooltip-top.custom-region-tooltip::before {
+    border-top-color: #3498db; /* Matches the border color we set above */
+}
+/* Remove outline from the tooltip itself */
+.leaflet-tooltip.custom-region-tooltip:focus {
+    outline: none !important;
+}
+
+/* Remove the focus outline from the marker/layer that triggered it */
+.leaflet-marker-icon:focus,
+.leaflet-interactive:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Ensure your internal container doesn't show an outline either */
+.custom-map-tooltip:focus {
+    outline: none !important;
+}
+.click-more {
+  text-align: center;
+}
