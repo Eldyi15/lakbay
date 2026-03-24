@@ -3,6 +3,7 @@ import * as L from 'leaflet';
 import { phgeoJson } from '../app/shared/polygons/philippines.polygon';
 import { regionsPoly } from '../app/shared/polygons/regions.polygon';
 import { ChangeDetectorRef } from '@angular/core';
+import { touristSpot } from '../app/shared/tourist-spots/tourist-spot';
 
 @Component({
   selector: 'app-landing-page',
@@ -22,29 +23,63 @@ export class LandingPage implements OnInit, AfterViewInit {
   layerGroup = new L.LayerGroup();
   sections = ['luzon', 'visayas', 'mindanao'];
   selectedIsland = 'luzon';
+  allSpots = touristSpot;
+  touristSpotLayerGroup = new L.LayerGroup();
+  luzonPlacetoVisit:any = [];
+  visayasPlacetovisit:any = [];
+  mindanaoPlacetovisit:any = [];
   constructor(private cdr: ChangeDetectorRef) {}
   ngOnInit(): void {
+    this.luzonPlacetoVisit = this.allSpots.find((region:any) => region.region === 'Luzon')?.spots
+    this.visayasPlacetovisit = this.allSpots.find((region:any) => region.region === 'Visayas')?.spots
+    this.mindanaoPlacetovisit = this.allSpots.find((region:any) => region.region === 'Mindanao')?.spots
+
+    console.log(this.luzonPlacetoVisit)
   }
   ngAfterViewInit(): void {
     this.generateMap();
   }
 
   onSectionChange(section: string) {
+    this.map.removeLayer(this.touristSpotLayerGroup);
     this.selectedIsland = section;
     this.cdr.detectChanges();
-    console.log(this.selectedIsland, 'selected')
+    const markers:any = [];
+    this.allSpots.find((spot:any) => {
+      if (spot.region.toLowerCase() === section) {
+        spot.spots.forEach((spt:any) => {
+          const iconOpt = L.icon({
+            iconUrl: spt.marker,
+            iconSize:[48,48]
+          })
+          markers.push(L.marker([spt.location.lat, spt.location.lng], {
+            icon:iconOpt
+          }).bindPopup(spt.name));
+        })
+      }
+    })
+    this.touristSpotLayerGroup = new L.LayerGroup(markers);
+    this.touristSpotLayerGroup.addTo(this.map);
     switch (section) {
       case 'luzon':
-        this.map.flyTo([16.5, 121], 6);
+        this.map.flyTo(this.luzonGeoJSONLayer.getBounds().getCenter(), 6.5, {
+          duration: 1,
+          animate: true
+        });
         break;
 
       case 'visayas':
-        this.map.flyTo([10.0, 124.0], 7);
-
+        this.map.flyTo(this.visayasGeoJsonLayer.getBounds().getCenter(), 7, {
+          duration: 1,
+          animate: true
+        });
         break;
 
       case 'mindanao':
-        this.map.flyTo([7.0, 125.0], 7);
+        this.map.flyTo(this.mindanaoGeoJsonLayer.getBounds().getCenter(), 7, {
+          duration: 1,
+          animate: true
+        });
         break;
     }
   }

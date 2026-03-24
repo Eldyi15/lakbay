@@ -16,6 +16,15 @@
                 <span><img class="logo-img" src="../assets/images/binoculars.png" alt=""><span><strong>Discover</strong> the Spanish-era walled city of <strong>Manila.</strong></span></span>
                 <span><img class="logo-img" src="../assets/images/relax.png" alt=""><span><strong>Relax</strong> on the beaches of <strong>La Union.</strong></span></span>
             </div>
+            <div class="divider"></div>
+            <div class="place-to-visit">
+                <div class="place-to-visit-tile">Top {{luzonPlacetoVisit.length}} places to visit:</div>
+                <div class="place-to-visit-section" >
+                    @for (place of luzonPlacetoVisit; track $index) {
+                        <div [class]="'category-' + place.category">{{place.name}}</div>
+                    }
+                </div>
+            </div>
         </div>
         <div id="visayas">
             <img class="island-img" src="https://i.pinimg.com/originals/c7/3a/f5/c73af5fa3dcd7e2f1a3c7a6dfea2d746.jpg" alt="">
@@ -26,7 +35,15 @@
                 <span><img class="logo-img" src="../assets/images/binoculars.png" alt=""><span><strong>Discover</strong> he fascinating <strong>Magellan’s Cross</strong> and other historical sites in <strong>Cebu City.</strong></span></span>
                 <span><img class="logo-img" src="../assets/images/relax.png" alt=""><span><strong>Relax</strong> on the world-renowned White Beach and enjoy vibrant nightlife in <strong>Boracay.</strong></span></span>
             </div>
-            
+            <div class="divider"></div>
+            <div class="place-to-visit">
+                <div class="place-to-visit-tile">Top {{visayasPlacetovisit.length}} places to visit:</div>
+                <div class="place-to-visit-section" >
+                    @for (place of visayasPlacetovisit; track $index) {
+                        <div [class]="'category-' + place.category">{{place.name}}</div>
+                    }
+                </div>
+            </div>
         </div>
         <div id="mindanao">
             <img class="island-img" src="https://assets.rappler.com/4DD6A77DBC5B4C338DEC96105ABF79FB/img/C01AF679DB4749CBBE4C9D20CF736974/MT.-APO-REFLECTION.jpg" alt="">
@@ -37,7 +54,21 @@
                 <span><img class="logo-img" src="../assets/images/binoculars.png" alt=""><span><strong>Discover</strong> the "City of Golden Friendship" and the whitewater rapids of <strong>Cagayan de Oro.</strong></span></span>
                 <span><img class="logo-img" src="../assets/images/relax.png" alt=""><span><strong>Relax</strong> by the crystal-clear waters of <strong>Siargao</strong>, the surfing capital of the country.</span></span>
             </div>
+            <div class="divider"></div>
+            <div class="place-to-visit">
+                <div class="place-to-visit-tile">Top {{mindanaoPlacetovisit.length}} places to visit:</div>
+                <div class="place-to-visit-section" >
+                    @for (place of mindanaoPlacetovisit; track $index) {
+                        <div [class]="'category-' + place.category">{{place.name}}</div>
+                    }
+                </div>
+            </div>
         </div>
+        @if((selectedIsland === 'luzon' || selectedIsland === 'visayas')) {
+            <div class="scroll scroll-down">Scroll Down</div>
+        } @else () {
+            <div class="scroll scroll-up">Scroll Up</div>
+        }
     </div>
     <div id="map">
     </div>
