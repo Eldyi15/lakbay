@@ -1,3 +1,44 @@
 <div id="landing-container" class="landing-page-container">
-    <div id="map"></div>
+    <div class="title-header">Discover the Philippines</div>
+    <div class="sub-title-header">Explore the beauty and culture of over 7,000 islands</div>
+    <div class="story">
+        <div class="animated-scrollbar-container">
+            <div class="bar" [class.selected]="selectedIsland === 'luzon'"></div>
+            <div class="bar" [class.selected]="selectedIsland === 'visayas'"></div>
+            <div class="bar" [class.selected]="selectedIsland === 'mindanao'"></div>
+        </div>
+        <div id="luzon">
+            <img class="island-img" src="https://i.pinimg.com/originals/27/61/6f/27616fe9d92e68351aa4277de6521174.jpg" alt="">
+            <span class="island-name">Luzon</span>
+            <div class="desc">Welcome to <strong>Luzon</strong>, the largest island where history, mountains and vibrant markets await.</div>
+            <div class="island-summary">
+                <span><img class="logo-img" src="../assets/images/footprint.png" alt=""><span><strong>Explore</strong> the stunning <strong>Banaue Rice Terraces.</strong></span></span>
+                <span><img class="logo-img" src="../assets/images/binoculars.png" alt=""><span><strong>Discover</strong> the Spanish-era walled city of <strong>Manila.</strong></span></span>
+                <span><img class="logo-img" src="../assets/images/relax.png" alt=""><span><strong>Relax</strong> on the beaches of <strong>La Union.</strong></span></span>
+            </div>
+        </div>
+        <div id="visayas">
+            <img class="island-img" src="https://i.pinimg.com/originals/27/61/6f/27616fe9d92e68351aa4277de6521174.jpg" alt="">
+            <span class="island-name">Visayas</span>
+            <div class="desc">Welcome to <strong>Visayas</strong>, an island group known for its stunning white-sand beaches, fascinating history, and friendly culture.</div>
+            <div class="island-summary">
+                <span><img class="logo-img" src="../assets/images/footprint.png" alt=""><span><strong>Explore</strong> he unique limestone formations on a tour of the Chocolate Hills in Bohol.</span></span>
+                <span><img class="logo-img" src="../assets/images/binoculars.png" alt=""><span><strong>Discover</strong> he fascinating <strong>Magellan’s Cross</strong> and other historical sites in <strong>Cebu City.</strong></span></span>
+                <span><img class="logo-img" src="../assets/images/relax.png" alt=""><span><strong>Relax</strong> on the world-renowned White Beach and enjoy vibrant nightlife in <strong>Boracay.</strong></span></span>
+            </div>
+            
+        </div>
+        <div id="mindanao">
+            <img class="island-img" src="https://i.pinimg.com/originals/27/61/6f/27616fe9d92e68351aa4277de6521174.jpg" alt="">
+            <span class="island-name">Mindanao</span>
+            <div class="desc">Welcome to <strong>Mindanao</strong>, the "Land of Promise," where majestic mountains, cascading waterfalls, and diverse cultures await.</div>
+            <div class="island-summary">
+                <span><img class="logo-img" src="../assets/images/footprint.png" alt=""><span><strong>Explore</strong> the towering <strong>Mount Apo, </strong>the highest peak in the Philippines.</span></span>
+                <span><img class="logo-img" src="../assets/images/binoculars.png" alt=""><span><strong>Discover</strong> the "City of Golden Friendship" and the whitewater rapids of <strong>Cagayan de Oro.</strong></span></span>
+                <span><img class="logo-img" src="../assets/images/relax.png" alt=""><span><strong>Relax</strong> by the crystal-clear waters of <strong>Siargao</strong>, the surfing capital of the country.</span></span>
+            </div>
+        </div>
+    </div>
+    <div id="map">
+    </div>
 </div>

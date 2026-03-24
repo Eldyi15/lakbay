@@ -1,12 +1,133 @@
 #map {
-  height: 100%;   /* or a fixed px value */
-  width: 100%;
+  width: 70%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
   background-color: transparent !important;
 }
 
 .landing-page-container {
-    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center; 
+}
+.circle-pin {
+  position: absolute;
+}
+.title-header{
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  font-size: 36px;
+  font-weight: bolder;
+  text-shadow: 2px 2px #c3c3c3;
+  color: #242932;
+}
+.sub-title-header{
+  position: absolute;
+  top: 72px;
+  left: 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #545a65;
+}
+.story {
+    width: 30%;
+    height: 75vh;
+    overflow-y: auto;
+    margin-top: 18vh;
+    margin-left: 24px;
+    border-radius: 24px;
+    background-color: #f8f9fe;
+    padding: 18px 0;
+    scroll-snap-type: y mandatory; /* 🔥 enables snapping */
+    scroll-behavior: smooth;
+    scroll-padding-top: 24px;
+    #luzon {
+      min-height: 100%;
+      margin: 24px 24px;
+      scroll-snap-align: start;
+      .island-img {
+        width: 100%;
+        height: 240px;
+        border-radius: 24px;
+      }
+    }
+    #visayas {
+      min-height: 100%;
+      margin: 0 24px;
+      scroll-snap-align: start;
+      .island-img {
+        width: 100%;
+        height: 240px;
+        border-radius: 24px;
+      }
+    }
+    #mindanao {
+      min-height: 100%;
+      margin: 0 24px;
+      scroll-snap-align: start;
+      .island-img {
+        width: 100%;
+        height: 240px;
+        border-radius: 24px;
+      }
+    }
+    .island-name {
+      position: relative;
+      top: -24px;
+      left: 42px;
+      background: #f8f9fe;
+      padding: 12px 32px 0;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      letter-spacing: 1px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .desc {
+      color: #606060
+    }
+    .island-summary {
+      strong {
+        color: rgb(255, 194, 26);
+        font-weight: 600;
+      }
+      gap: 4px;
+      display: flex;
+      flex-direction: column;
+      padding-left: 24px;
+      color: #606060;
+      margin-top: 8px;
+        .logo-img {
+          height: 12px;
+          width: 12px;
+          margin-right: 8px;
+        }
+    }
+    .animated-scrollbar-container {
+      position: absolute;
+      left: .5%;
+      top: 50%;
+      .bar {
+        height: 32px;
+        width: 6px;
+        background-color: #2e2e2e;
+        opacity: 25%;
+        margin-bottom: 8px;
+        border-radius: 12px;
+      }
+      .bar.selected {
+        background-color: rgb(255, 194, 26);
+        opacity: 1;
+        transition: all 0.5s ease-in;
+      }
+    }
+}
+.story::-webkit-scrollbar {
+  display: none;
+}
+
+.divider {
+  background-color: #dddddd;
+  height: 1px;
+  margin: 12px 24px;
 }

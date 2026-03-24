@@ -1623,7 +1623,8 @@ export const regionsPoly = {
       "properties": {
         "source": "https://simplemaps.com", 
         "id": "PH11", 
-        "name": "Davao"
+        "name": "Davao",
+        "iconUrl": "/assets/images/landmark/philippine-eagle.png"
       }, 
       "id": 1
     }, 
@@ -5275,7 +5276,8 @@ export const regionsPoly = {
       "properties": {
         "source": "https://simplemaps.com", 
         "id": "PH10", 
-        "name": "Northern Mindanao"
+        "name": "Northern Mindanao",
+        "iconUrl": "/assets/images/landmark/durian.png"
       }, 
       "id": 3
     }, 
@@ -8001,7 +8003,7 @@ export const regionsPoly = {
       "properties": {
         "source": "https://simplemaps.com", 
         "id": "PH14", 
-        "name": "Autonomous Region in Muslim Mindanao"
+        "name": "Bangsamoro Autonomous Region in Muslim Mindanao"
       }, 
       "id": 4
     }, 
@@ -21661,7 +21663,8 @@ export const regionsPoly = {
       "properties": {
         "source": "https://simplemaps.com", 
         "id": "PH08", 
-        "name": "Eastern Visayas"
+        "name": "Eastern Visayas",
+        "iconUrl": "/assets/images/landmark/bohol.png"
       }, 
       "id": 8
     }, 
@@ -25919,7 +25922,8 @@ export const regionsPoly = {
       "properties": {
         "source": "https://simplemaps.com", 
         "id": "PH05", 
-        "name": "Bicol"
+        "name": "Bicol",
+        "iconUrl": "/assets/images/landmark/mt-apo.png"
       }, 
       "id": 9
     }, 
@@ -29797,7 +29801,8 @@ export const regionsPoly = {
       "properties": {
         "source": "https://simplemaps.com", 
         "id": "PH00", 
-        "name": "National Capital Region"
+        "name": "National Capital Region",
+        "iconUrl": "/assets/images/landmark/intramuros.png"
       }, 
       "id": 12
     }, 
@@ -30665,7 +30670,8 @@ export const regionsPoly = {
       "properties": {
         "source": "https://simplemaps.com", 
         "id": "PH15", 
-        "name": "Cordillera Administrative Region"
+        "name": "Cordillera Administrative Region",
+        "iconUrl": "/assets/images/landmark/rice-terraces.png"
       }, 
       "id": 13
     }, 
@@ -34241,7 +34247,7 @@ export const regionsPoly = {
       "properties": {
         "source": "https://simplemaps.com", 
         "id": "PH07", 
-        "name": "Central Visayas"
+        "name": "Central Visayas",
       }, 
       "id": 15
     }, 
@@ -36191,7 +36197,8 @@ export const regionsPoly = {
       "properties": {
         "source": "https://simplemaps.com", 
         "id": "PH06", 
-        "name": "Western Visayas"
+        "name": "Western Visayas",
+        "iconUrl": "/assets/images/landmark/boracay.png"
       }, 
       "id": 16
     }, 
