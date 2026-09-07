@@ -307,6 +307,126 @@ export const touristSpot = [
             "description": "Island famous for having the sweetest mangoes.",
             "marker": "assets/images/landmark/intramuros-pin.png",
             "image": "assets/images/guimaras.jpg"
+            },
+            {
+                "id": "oslob-whale-sharks",
+                "name": "Oslob Whale Shark Watching",
+                "location": {
+                    "lat": 9.4635,
+                    "lng": 123.3801
+                },
+                "category": "nature",
+                "description": "A famous spot for swimming and interacting with gentle whale sharks.",
+                "marker": "assets/images/landmark/intramuros-pin.png",
+                "image": "assets/images/oslob.jpg"
+            },
+            {
+                "id": "kawasan-falls",
+                "name": "Kawasan Falls",
+                "location": {
+                    "lat": 9.8051,
+                    "lng": 123.3748
+                },
+                "category": "nature",
+                "description": "A multi-layered waterfall system famous for its turquoise water and canyoneering.",
+                "marker": "assets/images/landmark/intramuros-pin.png",
+                "image": "assets/images/kawasan.jpg"
+            },
+            {
+                "id": "malapascua",
+                "name": "Malapascua Island",
+                "location": {
+                    "lat": 11.3333,
+                    "lng": 124.1167
+                },
+                "category": "beach",
+                "description": "A world-class diving destination known for Thresher Shark sightings.",
+                "marker": "assets/images/landmark/intramuros-pin.png",
+                "image": "assets/images/malapascua.jpg"
+            },
+            {
+                "id": "the-ruins",
+                "name": "The Ruins",
+                "location": {
+                    "lat": 10.7084,
+                    "lng": 122.9821
+                },
+                "category": "history",
+                "description": "The 'Taj Mahal of the Philippines,' a skeleton of an ancestral mansion in Talisay.",
+                "marker": "assets/images/landmark/intramuros-pin.png",
+                "image": "assets/images/the-ruins.jpg"
+            },
+            {
+                "id": "bantayan-island",
+                "name": "Bantayan Island",
+                "location": {
+                    "lat": 11.1965,
+                    "lng": 123.7745
+                },
+                "category": "beach",
+                "description": "Peaceful island known for its powder-white sand and crystal-clear waters.",
+                "marker": "assets/images/landmark/intramuros-pin.png",
+                "image": "assets/images/bantayan.jpg"
+            },
+            {
+                "id": "apo-island",
+                "name": "Apo Island",
+                "location": {
+                    "lat": 9.0747,
+                    "lng": 123.2714
+                },
+                "category": "nature",
+                "description": "A volcanic island and marine sanctuary famous for sea turtle encounters.",
+                "marker": "assets/images/landmark/intramuros-pin.png",
+                "image": "assets/images/apo-island.jpg"
+            },
+            {
+                "id": "biri-rock-formations",
+                "name": "Biri Rock Formations",
+                "location": {
+                    "lat": 12.6811,
+                    "lng": 124.3642
+                },
+                "category": "nature",
+                "description": "Massive, uniquely sculpted limestone rocks facing the Pacific Ocean.",
+                "marker": "assets/images/landmark/intramuros-pin.png",
+                "image": "assets/images/biri.jpg"
+            },
+            {
+                "id": "gigantes-islands",
+                "name": "Islas de Gigantes",
+                "location": {
+                    "lat": 11.5833,
+                    "lng": 123.3500
+                },
+                "category": "nature",
+                "description": "A remote island chain known for fresh scallops and the Cabugao Gamay islet.",
+                "marker": "assets/images/landmark/intramuros-pin.png",
+                "image": "assets/images/gigantes.jpg"
+            },
+            {
+                "id": "santuario-de-san-antonio",
+                "name": "Limasawa Island",
+                "location": {
+                    "lat": 9.9333,
+                    "lng": 125.0667
+                },
+                "category": "history",
+                "description": "The site of the first Catholic Mass in the Philippines.",
+                "marker": "assets/images/landmark/intramuros-pin.png",
+                "image": "assets/images/limasawa.jpg"
+            },
+            {
+                "id": "manjuyod-sandbar",
+                "name": "Manjuyod Sandbar",
+                "location": {
+                    "lat": 9.5886,
+                    "lng": 123.1614
+                },
+                "category": "beach",
+                "description": "Often called the 'Maldives of the Philippines,' featuring stilt houses on a sandbar.",
+                "marker": "assets/images/landmark/intramuros-pin.png",
+                "image": "assets/images/manjuyod.jpg"
             }
         ]
     },
@@ -432,7 +552,128 @@ export const touristSpot = [
             "description": "Famous sandbar with panoramic ocean and volcano views.",
             "marker": "assets/images/landmark/intramuros-pin.png",
             "image": "assets/images/white-island.jpg"
+            },
+            {
+                "id": "dahilayan-adventure-park",
+                "name": "Dahilayan Adventure Park",
+                "location": {
+                    "lat": 8.2142,
+                    "lng": 124.8722
+                },
+                "category": "nature",
+                "description": "Popular adventure hub in Bukidnon known for one of Asia's longest dual ziplines.",
+                "marker": "assets/images/landmark/intramuros-pin.png",
+                "image": "assets/images/dahilayan.jpg"
+            },
+            {
+                "id": "lake-sebu",
+                "name": "Lake Sebu",
+                "location": {
+                    "lat": 6.2306,
+                    "lng": 124.7101
+                },
+                "category": "nature",
+                "description": "Cultural and natural treasure famous for its 7 waterfalls and T'boli heritage.",
+                "marker": "assets/images/landmark/intramuros-pin.png",
+                "image": "assets/images/lake-sebu.jpg"
+            },
+            {
+                "id": "maria-cristina-falls",
+                "name": "Maria Cristina Falls",
+                "location": {
+                    "lat": 8.1831,
+                    "lng": 124.1947
+                },
+                "category": "nature",
+                "description": "The landmark 'Twin Falls' of Iligan City and a major source of hydroelectric power.",
+                "marker": "assets/images/landmark/intramuros-pin.png",
+                "image": "assets/images/maria-cristina.jpg"
+            },
+            {
+                "id": "mt-kitanglad",
+                "name": "Mount Kitanglad",
+                "location": {
+                    "lat": 8.1133,
+                    "lng": 124.9167
+                },
+                "category": "mountain",
+                "description": "An inactive volcano and a protected park known for its rich biodiversity.",
+                "marker": "assets/images/landmark/intramuros-pin.png",
+                "image": "assets/images/kitanglad.jpg"
+            },
+            {
+                "id": "zamboanga-fort-pilar",
+                "name": "Fort Pilar",
+                "location": {
+                    "lat": 6.9004,
+                    "lng": 122.0831
+                },
+                "category": "history",
+                "description": "A 17th-century Spanish military defense fortress and a major religious shrine.",
+                "marker": "assets/images/landmark/intramuros-pin.png",
+                "image": "assets/images/fort-pilar.jpg"
+            },
+            {
+                "id": "pink-sand-beach",
+                "name": "Santa Cruz Island",
+                "location": {
+                    "lat": 6.8682,
+                    "lng": 122.0652
+                },
+                "category": "beach",
+                "description": "Famous for its unique pink sand beach created by pulverized red organ pipe corals.",
+                "marker": "assets/images/landmark/intramuros-pin.png",
+                "image": "assets/images/pink-beach.jpg"
+            },
+            {
+                "id": "sunken-cemetery",
+                "name": "Sunken Cemetery",
+                "location": {
+                    "lat": 9.2024,
+                    "lng": 124.6681
+                },
+                "category": "history",
+                "description": "Iconic Camiguin landmark marking a cemetery submerged by a volcanic eruption.",
+                "marker": "assets/images/landmark/intramuros-pin.png",
+                "image": "assets/images/sunken-cemetery.jpg"
+            },
+            {
+                "id": "aliwagwag-falls",
+                "name": "Aliwagwag Falls",
+                "location": {
+                    "lat": 7.7370,
+                    "lng": 126.2910
+                },
+                "category": "nature",
+                "description": "Davao Oriental's staircase-like waterfall, one of the highest in the country.",
+                "marker": "assets/images/landmark/intramuros-pin.png",
+                "image": "assets/images/aliwagwag.jpg"
+            },
+            {
+                "id": "lake-lanao",
+                "name": "Lake Lanao",
+                "location": {
+                    "lat": 7.8841,
+                    "lng": 124.2541
+                },
+                "category": "nature",
+                "description": "One of the ancient lakes in the world and the center of Maranao culture.",
+                "marker": "assets/images/landmark/intramuros-pin.png",
+                "image": "assets/images/lake-lanao.jpg"
+            },
+            {
+                "id": "gumasa-beach",
+                "name": "Gumasa Beach",
+                "location": {
+                    "lat": 5.8643,
+                    "lng": 125.3021
+                },
+                "category": "beach",
+                "description": "Known as the 'Boracay of the South' located in Sarangani province.",
+                "marker": "assets/images/landmark/intramuros-pin.png",
+                "image": "assets/images/gumasa.jpg"
             }
+            
         ]
     }
 ]

@@ -62,7 +62,7 @@ export class LandingPage implements OnInit, AfterViewInit {
     this.touristSpotLayerGroup.addTo(this.map);
     switch (section) {
       case 'luzon':
-        this.map.flyTo(this.luzonGeoJSONLayer.getBounds().getCenter(), 6.5, {
+        this.map.flyTo(this.luzonGeoJSONLayer.getBounds().getCenter(), 6.3, {
           duration: 1,
           animate: true
         });
